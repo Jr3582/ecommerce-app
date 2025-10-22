@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import { Footer } from "@/components";
+// root layout intentionally minimal; Navbar/Footer live in group layouts
 
 const jost = Jost({
   variable: '--font-jost',
@@ -24,9 +23,8 @@ export default function RootLayout({
       <body
         className={`${jost.className}  antialiased`}
       >
-        <Navbar/>
         {children}
-        <Footer/>
+        {/* Removed Navbar and Footer for minimal layout */}
       </body>
     </html>
   );
