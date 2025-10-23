@@ -1,19 +1,19 @@
-<h3 align="center">Nike Ecommerce w/ Devin AI</h3>
+<h3 align="center">Nike Ecommerce</h3>
+
+## 🛠️ <a name="todo">To-do</a>
+1. Implement cart functionality and checkout
+2. Add google and apple sign in
+3. Make it so the user can't get into the page without logging in
+4. Implement collection and wishlist functionality
 
 ## 📋 <a name="table">Table of Contents</a>
 
-1. ✨ [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#links)
-6. 🚀 [More](#more)
+1. ⚙️ [Tech Stack](#tech-stack)
+2. 🤸 [Quick Start](#quick-start)
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - **[Better Auth](https://www.better-auth.com/)** is a framework-agnostic authentication and authorization library for TypeScript. It provides built-in support for email and password authentication, social sign-on (Google, GitHub, Apple, and more), and multi-factor authentication, simplifying user authentication and account management.
-
-- **[Devin AI](https://docs.devin.ai/get-started/devin-intro)** is an autonomous AI software engineer by Cognition Labs that independently plans, writes, debugs, and deploys full applications from natural language prompts. It integrates with tools like Slack, Linear, and Jira to manage tasks and pull requests, and learns new technologies on the fly by reading documentation.
 
 - **[Drizzle ORM](https://orm.drizzle.team/)** is a lightweight and performant TypeScript ORM designed with developer experience in mind. It provides a seamless interface between application code and database operations while maintaining high performance and reliability.
 
