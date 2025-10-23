@@ -2,6 +2,7 @@ import React from "react";
 import AuthForm from "@/components/AuthForm";
 import SocialProviders from "@/components/SocialProviders";
 import Link from "next/link";
+import { signIn } from "@/lib/auth/actions";
 
 export default function SignInPage() {
   return (
@@ -23,7 +24,7 @@ export default function SignInPage() {
           </div>
         </div>
 
-        <AuthForm mode="sign-in" />
+        <AuthForm mode="sign-in" onSubmit={signIn} />
 
         <p className="text-center text-caption text-dark-700">
           Don't have an account? <Link href="/sign-up" className="text-[--color-green] underline">Create one</Link>
