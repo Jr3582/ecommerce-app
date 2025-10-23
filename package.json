@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
-    "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio"
+    "db:generate": "node -r ts-node/register node_modules/drizzle-kit/bin.cjs generate --config ./drizzle.config.cjs",
+    "db:migrate": "node -r ts-node/register node_modules/drizzle-kit/bin.cjs migrate --config ./drizzle.config.cjs",
+    "db:push": "node -r ts-node/register node_modules/drizzle-kit/bin.cjs push --config ./drizzle.config.cjs",
+    "db:studio": "node -r ts-node/register node_modules/drizzle-kit/bin.cjs studio --config ./drizzle.config.cjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
@@ -19,7 +19,9 @@
     "better-auth": "^1.3.29",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.44.6",
+    "lucide-react": "^0.546.0",
     "next": "15.4.6",
+    "query-string": "^9.3.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "uuid": "^13.0.0",
@@ -35,6 +37,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
     "tailwindcss": "^4.1.15",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
