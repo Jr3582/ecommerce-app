@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db:generate": "node -r ts-node/register node_modules/drizzle-kit/bin.cjs generate --config ./drizzle.config.cjs",
-    "db:migrate": "node -r ts-node/register node_modules/drizzle-kit/bin.cjs migrate --config ./drizzle.config.cjs",
-    "db:push": "node -r ts-node/register node_modules/drizzle-kit/bin.cjs push --config ./drizzle.config.cjs",
-    "db:studio": "node -r ts-node/register node_modules/drizzle-kit/bin.cjs studio --config ./drizzle.config.cjs"
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx src/lib/db/seed.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
@@ -38,6 +39,8 @@
     "eslint-config-next": "15.4.6",
     "tailwindcss": "^4.1.15",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.20.6",
     "typescript": "^5"
   }
 }
