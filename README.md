@@ -1,47 +1,62 @@
-# E-Commerce App
+<h3 align="center">Nike Ecommerce w/ Devin AI</h3>
 
-A modern e-commerce application built with Next.js 15, TypeScript, TailwindCSS, Better Auth, Neon PostgreSQL, Drizzle ORM, and Zustand.
+## 📋 <a name="table">Table of Contents</a>
 
-## 🚀 Tech Stack
+1. ✨ [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
+5. 🔗 [Assets](#links)
+6. 🚀 [More](#more)
 
-- **Framework**: Next.js 15 with App Router
-- **Language**: TypeScript
-- **Styling**: TailwindCSS
-- **Authentication**: Better Auth
-- **Database**: Neon PostgreSQL
-- **ORM**: Drizzle ORM
-- **State Management**: Zustand
-- **Linting**: ESLint
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-## 📦 Features
+- **[Better Auth](https://www.better-auth.com/)** is a framework-agnostic authentication and authorization library for TypeScript. It provides built-in support for email and password authentication, social sign-on (Google, GitHub, Apple, and more), and multi-factor authentication, simplifying user authentication and account management.
 
-- ✅ Modern Next.js 15 with App Router
-- ✅ TypeScript for type safety
-- ✅ TailwindCSS for styling
-- ✅ Better Auth for authentication (email/password + OAuth)
-- ✅ Neon PostgreSQL database
-- ✅ Drizzle ORM for type-safe database queries
-- ✅ Zustand for state management
-- ✅ ESLint for code quality
-- ✅ Database schema for users, products, orders, and cart
+- **[Devin AI](https://docs.devin.ai/get-started/devin-intro)** is an autonomous AI software engineer by Cognition Labs that independently plans, writes, debugs, and deploys full applications from natural language prompts. It integrates with tools like Slack, Linear, and Jira to manage tasks and pull requests, and learns new technologies on the fly by reading documentation.
 
-## 🛠️ Setup Instructions
+- **[Drizzle ORM](https://orm.drizzle.team/)** is a lightweight and performant TypeScript ORM designed with developer experience in mind. It provides a seamless interface between application code and database operations while maintaining high performance and reliability.
 
-### 1. Install Dependencies
+- **[Neon](https://neon.com/)** is a fully managed, serverless PostgreSQL database platform. It offers features like instant provisioning, autoscaling, and database branching, enabling developers to build scalable applications without managing infrastructure.
+
+- **[Next.js](https://nextjs.org/docs)** is a powerful React framework for building full-stack web applications. It simplifies development with features like server-side rendering, static site generation, and API routes, enabling developers to focus on building products and shipping quickly.
+
+- **[TailwindCSS](https://tailwindcss.com/)** is a utility-first CSS framework that allows developers to build custom, responsive designs quickly without leaving their HTML. It provides pre-defined classes for layout, typography, colors, and more.
+
+- **[TypeScript](https://www.typescriptlang.org/)** is a superset of JavaScript that adds static typing, providing better tooling, code quality, and error detection for developers. It is ideal for building large-scale applications and enhances the development experience.
+
+- **[Zustand](https://zustand-demo.pmnd.rs)** is a minimal, hook-based state management library for React. It lets you manage global state with zero boilerplate, no context providers, and excellent performance through selective state subscriptions.
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/Jr3582/ecommerce-app.git
+cd e-commerce
+```
+
+**Installation**
+
+Install the project dependencies using npm:
 
 ```bash
 npm install
 ```
 
-### 2. Environment Variables
+**Set Up Environment Variables**
 
-Copy the example environment file and fill in your credentials:
-
-```bash
-cp .env.example .env
-```
-
-Fill in the following variables in your `.env` file:
+Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
 # Database
@@ -60,28 +75,15 @@ GOOGLE_CLIENT_ID=""
 GOOGLE_CLIENT_SECRET=""
 ```
 
-### 3. Database Setup
+Replace the placeholder values with your credentials. You can get these by signing up at: [**NeonDB**](https://neon.com/), [**Better-Auth**](https://www.better-auth.com/).
 
-Create your database tables:
-
-```bash
-npm run db:push
-```
-
-Or generate and run migrations:
-
-```bash
-npm run db:generate
-npm run db:migrate
-```
-
-### 4. Run the Development Server
+**Running the Project**
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
 ## 📁 Project Structure
 
@@ -112,59 +114,3 @@ The application includes the following tables:
 - **products**: Product catalog
 - **orders**: Customer orders
 - **order_items**: Individual items in orders
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run db:generate` - Generate database migrations
-- `npm run db:migrate` - Run database migrations
-- `npm run db:push` - Push schema changes to database
-- `npm run db:studio` - Open Drizzle Studio
-
-## 🔐 Authentication
-
-The app uses Better Auth with support for:
-
-- Email/password authentication
-- GitHub OAuth (optional)
-- Google OAuth (optional)
-- Session management
-- Email verification
-
-## 🛒 State Management
-
-Zustand stores are configured for:
-
-- **Authentication**: User login state and profile
-- **Shopping Cart**: Cart items, quantities, and totals
-
-## 📝 Next Steps
-
-1. Set up your Neon PostgreSQL database
-2. Configure your OAuth providers (optional)
-3. Customize the UI and add your branding
-4. Implement product management
-5. Add payment processing
-6. Deploy to your preferred platform
-
-## 🚀 Deployment
-
-This app can be deployed to:
-
-- Vercel (recommended for Next.js)
-- Netlify
-- Railway
-- Any platform supporting Node.js
-
-Make sure to set your environment variables in your deployment platform.
-
-## 📚 Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Better Auth Documentation](https://better-auth.com)
-- [Drizzle ORM Documentation](https://orm.drizzle.team)
-- [TailwindCSS Documentation](https://tailwindcss.com/docs)
-- [Zustand Documentation](https://zustand-demo.pmnd.rs)
